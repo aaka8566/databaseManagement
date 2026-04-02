@@ -1,0 +1,63 @@
+[
+  {
+    "name": "dev-arohan",
+    "engine": "MySQL 8",
+    "host": "dev-arohan.mmb.perdix.co",
+    "port": 3306,
+    "user": "rwuser",
+    "password": "cD6Q7109dO88jHR68DK5",
+    "database": "financialForms",
+    "ssh_tunnel": null,
+    "schemas": [
+      {
+        "name": "finance",
+        "tables": [
+          {
+            "schema": "finance",
+            "name": "products",
+            "primary_sort": "updated_at",
+            "row_count": 42,
+            "size": "8 MB",
+            "indexes": 2,
+            "columns": [
+              {
+                "name": "sku",
+                "kind": "varchar(24)",
+                "nullable": false
+              },
+              {
+                "name": "name",
+                "kind": "varchar(120)",
+                "nullable": false
+              },
+              {
+                "name": "price_usd",
+                "kind": "decimal(10,2)",
+                "nullable": false
+              },
+              {
+                "name": "updated_at",
+                "kind": "datetime",
+                "nullable": false
+              }
+            ],
+            "rows": [
+              [
+                "sku-2",
+                "Starter 2",
+                "19.00",
+                "2026-03-25 09:10:00"
+              ],
+              [
+                "sku-2-pro",
+                "Pro 2",
+                "79.00",
+                "2026-03-25 09:11:00"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
